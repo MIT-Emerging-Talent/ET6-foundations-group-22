@@ -1,3 +1,4 @@
+# cSpell:ignore venv
 ignore:
   - venv
   - .github
