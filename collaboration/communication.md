@@ -1,92 +1,98 @@
 # Communication
 
-______________________________________________________________________
+---
 
 ## Communication Schedule
 
-| **Day**       | **How**              | **Topic of Discussion**            |  
-|----------------|----------------------|-------------------------------------|  
-| Friday/Sunday  | Video call (Zoom)    | Update on progress/ complex discussions/ decision-making   |  
-| Everyday       | Slack                | Quick questions, announcements     |  
+| **Day**       | **How**           | **Topic of Discussion**         |  
+|---------------|-------------------|---------------------------------|  
+| Friday/Sunday | Video call (Zoom) | Updates, discussions, decisions |  
+| Everyday      | Slack             | Quick questions, announcements  |  
 
-______________________________________________________________________
+---
 
 ## Communication Channels
 
-**How often will we get in touch on each channel, and what we will discuss there:**  
+**How often will we use each channel and what for:**  
 
 - **Issues**:  
-  - **Frequency**: Daily or as new issues arise.  
-  - **Topics Discussed**:  
-    - Bugs and their resolution.  
-    - Feature requests or enhancements.  
-    - Documentation or knowledge gaps.  
-    - General project-related discussions requiring tracking.  
+  - **Frequency**: Daily or as needed.  
+  - **Topics**: Bugs, features, docs, and project discussions.  
 
 - **Pull Requests**:  
-  - **Frequency**: As needed when code changes are ready for review.  
-  - **Topics Discussed**:  
-    - Code review and feedback.  
-    - Suggestions for improvement or refactoring.  
-    - Discussions on implementation details.  
-    - Final approvals and merging criteria.  
+  - **Frequency**: When ready for review.  
+  - **Topics**: Code feedback, changes, and approval.  
 
 - **Slack/Discord**:  
-  - **Frequency**: Continuously throughout the workday.  
-  - **Topics Discussed**:  
-    - Quick questions or clarifications.  
-    - Updates on progress or blockers.  
-    - Sharing resources, links, or relevant information.  
-    - Informal discussions or team bonding in designated channels.  
+  - **Frequency**: Continuously.  
+  - **Topics**: Questions, updates, links, and team bonding.  
 
 - **Video Calls**:  
-  - **Frequency**: Weekly or bi-weekly, or as needed for critical discussions.  
-  - **Topics Discussed**:  
-    - Project planning and roadmap alignment.  
-    - Sprint retrospectives or reviews.  
-    - Deep-dive discussions on complex issues.  
-    - Conflict resolution and decision-making.  
+  - **Frequency**: Weekly or bi-weekly.  
+  - **Topics**: Planning, retrospectives, and complex issues.  
 
-______________________________________________________________________
+---
 
 ## Availability
 
 ### Availability for Calling/Messaging
 
-| **Day**      | **Monday** | **Tuesday** | **Wednesday** | **Thursday** | **Friday** | **Saturday** | **Sunday** |  
-|--------------|:----------:|:-----------:|:-------------:|:------------:|:----------:|:------------:|:----------:|  
-| Derek        | 12:00-2:00 | 12:00-2:00  | 12:00-2:00    | 12:00-2:00   | 12:00-2:00 | 12:00-2:00   | 12:00-2:00 |  
-| Safaa        | Available  | Available   | Available     | Unavailable  | Unavailable| Unavailable  | Unavailable|  
-| Frankline    | 9:00-11:00 | 9:00-11:00  | 9:00-11:00    | 9:00-11:00   | 9:00-11:00 | Unavailable  | Unavailable|  
-| Tibyan       | Unavailable| Available   | Unavailable   | Unavailable  | Available  | Available    | Available  |  
-| Azza         | 4:00-6:00  | 4:00-12:00  | 4:00-12:00    | Unavailable  | Unavailable| 12:00-14:00  | 4:00-12:00 |  
-| Kareiman     | 12:00-19:00| 12:00-19:00 | 12:00-19:00   | 12:00-19:00  | 8:00-11:00 | 8:00-12:00   | 12:00-19:00|  
-| Eman         | 12:00-2:00 | 12:00-2:00  | 12:00-2:00    | 12:00-2:00   | 12:00-2:00 | 12:00-2:00   | 12:00-2:00 |  
-| Shima        | 11:00-1:00 | Unavailable | 11:00-1:00    | 11:00-1:00   | 11:00-1:00 | 11:00-1:00   | Unavailable|  
+| **Day**   | **Mon** | **Tue** | **Wed** | **Thu** | **Fri**  |  
+|-----------|:-------:|:-------:|:-------:|:-------:|:-------:|  
+| Derek     | ✔       | ✔       | ✔       | ✔       | ✔       |  
+| Safaa     | ✔       | ✔       | ✔       | ✘       | ✘       |  
+| Frankline | ✔       | ✔       | ✔       | ✔       | ✔       |  
+| Tibyan    | ✘       | ✔       | ✘       | ✘       | ✔       |  
+| Azza      | ✔       | ✔       | ✔       | ✘       | ✘       |  
+| Kareiman  | ✔       | ✔       | ✔       | ✔       | ✔       |  
+| Eman      | ✔       | ✔       | ✔       | ✔       | ✔       |  
+| Shima     | ✔       | ✘       | ✔       | ✔       | ✔       |  
+
+| **Day**   | **Sat** | **Sun** |  
+|-----------|:-------:|:-------:|  
+| Derek     | ✔       | ✔       |  
+| Safaa     | ✘       | ✘       |  
+| Frankline | ✘       | ✘       |  
+| Tibyan    | ✔       | ✔       |  
+| Azza      | ✔       | ✔       |  
+| Kareiman  | ✔       | ✔       |  
+| Eman      | ✔       | ✔       |  
+| Shima     | ✔       | ✘       |  
 
 ---
 
 ### Hours Available Per Day
 
-| **Days/Name** | **Monday** | **Tuesday** | **Wednesday** | **Thursday** | **Friday** | **Saturday** | **Sunday** |  
-|---------------|------------|-------------|---------------|--------------|------------|--------------|------------|  
-| Ambetsa       | 2 hours    | 2 hours     | 2 hours       | 2 hours      | 2 hours    | Unavailable  | Unavailable|  
-| Derek         | 2 hours    | 2 hours     | 2 hours       | 2 hours      | 2 hours    | 2 hours      | 2 hours    |  
-| Safaa         | 2 hours    | 2 hours     | 2 hours       | Unavailable  | Unavailable| 2 hours      | 2 hours    |  
-| Shima         | 2 hours    | Unavailable | 3 hours       | 3 hours      | 3 hours    | 3 hours      | Unavailable|  
-| Tibyan        | 1 hour     | 6 hours     | 1 hour        | 1 hour       | 6 hours    | 6 hours      | 6 hours    |  
-| Azza          | 2 hours    | 7 hours     | 7 hours       | Unavailable  | Unavailable| 2 hours      | 7 hours    |  
-| Kareiman      | 6 hours    | 6 hours     | 6 hours       | 6 hours      | 3 hours    | 4 hours      | 4 hours    |  
-| Eman          | 2 hours    | 2 hours     | 2 hours       | 2 hours      | 2 hours    | 3 hours      | 3 hours    |  
+| **Name**   | **Mon** | **Tue** | **Wed** | **Thu** | **Fri**  |  
+|------------|---------|---------|---------|---------|---------|  
+| Ambetsa    | 2       | 2       | 2       | 2       | 2       |  
+| Derek      | 2       | 2       | 2       | 2       | 2       |  
+| Safaa      | 2       | 2       | 2       | ✘       | ✘       |  
+| Shima      | 2       | ✘       | 3       | 3       | 3       |  
+| Tibyan     | 1       | 6       | 1       | 1       | 6       |  
+| Azza       | 2       | 7       | 7       | ✘       | ✘       |  
+| Kareiman   | 6       | 6       | 6       | 6       | 3       |  
+| Eman       | 2       | 2       | 2       | 2       | 2       |  
 
-______________________________________________________________________
+| **Name**   | **Sat** | **Sun** |  
+|------------|---------|---------|  
+| Ambetsa    | ✘       | ✘       |  
+| Derek      | 2       | 2       |  
+| Safaa      | 2       | 2       |  
+| Shima      | 3       | ✘       |  
+| Tibyan     | 6       | 6       |  
+| Azza       | 2       | 7       |  
+| Kareiman   | 4       | 4       |  
+| Eman       | 3       | 3       |  
+
+---
 
 ## Asking for Help
 
-Here’s a guideline for when to ask for help based on how long you’ve been stuck:  
+Guidelines for asking help:  
 
-1. **0-30 minutes**: Try solving the issue independently.  
-2. **30-60 minutes**: Reach out to your group for help.  
-3. **60+ minutes**: Tag your coaches on Slack or GitHub for assistance.  
+1. **0-30 min**: Try solving independently.  
+2. **30-60 min**: Ask group members for help.  
+3. **60+ min**: Tag coaches on Slack/GitHub.  
 
 ---
