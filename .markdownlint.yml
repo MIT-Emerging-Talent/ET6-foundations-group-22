@@ -2,3 +2,6 @@
 ignore:
   - venv
   - .github
+# markdown ignore roles
+MDO13: false
+MD035: false
