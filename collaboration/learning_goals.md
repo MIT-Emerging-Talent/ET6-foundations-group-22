@@ -1,6 +1,6 @@
 # Learning Goals
 
-## Collective Objectives 🏆
+## 🏆 Collective Objectives 🏆
 
 ### 🧑‍💻 Seamless Collaboration and Version Control
 
@@ -32,7 +32,7 @@
 - Build relationships that support professional growth within and
   outside the team.
 
-## Individual Objectives 🚀
+## 🚀 Individual Objectives  🚀
 
 Each team member will pursue the following professional development objectives:
 
