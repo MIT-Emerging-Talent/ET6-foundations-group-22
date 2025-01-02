@@ -32,7 +32,7 @@
 - Build relationships that support professional growth within and
   outside the team.
 
-## 🚀 Individual Objectives  🚀
+## 🚀 Individual Objectives 🚀
 
 Each team member will pursue the following professional development objectives:
 
@@ -41,7 +41,6 @@ Each team member will pursue the following professional development objectives:
 - Explore computer science topics, focusing on debugging, testing, and
   unit testing.
 - Apply Python in data analysis and science.  
-
 - Learn and effectively use Git and GitHub for collaboration and group
   projects.
 - Gain confidence in debugging with tools like pdb, the VSCode debugger,
