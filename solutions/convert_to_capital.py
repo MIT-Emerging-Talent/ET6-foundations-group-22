@@ -11,7 +11,7 @@ Created on 31 12 2024
 """
 
 
-def convert_to_capital(user_text: str = None) -> str:
+def convert_to_capital(user_text: str) -> str:
     """Asks the user to enter a text and returns the text in capital
 
     parameters:
@@ -30,15 +30,10 @@ def convert_to_capital(user_text: str = None) -> str:
     >>> convert_to_capital('123hello')
         '123HELLO'
     """
-    if user_text is None:
-        user_text = input("Enter a Word or Sentence: ").strip()
+
+    user_text = user_text.strip()
 
     if not user_text:
         raise AssertionError("Entry cannot be empty or just spaces")
 
-    outcome_text = user_text.upper()
-    return outcome_text
-
-
-if __name__ == "__main__":
-    print(convert_to_capital())
+    return user_text.upper()
