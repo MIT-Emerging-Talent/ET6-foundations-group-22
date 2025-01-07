@@ -1,7 +1,5 @@
 # Solutions
 
-# Solutions Folder
-
 This folder contains implementations for various challenges.
 
 ## Challenges
@@ -16,4 +14,5 @@ This folder contains implementations for various challenges.
 
 ## Usage
 
-To use any solution, simply import the required function and pass the appropriate arguments.
+To use any solution, simply import the required function
+and pass the appropriate arguments.
