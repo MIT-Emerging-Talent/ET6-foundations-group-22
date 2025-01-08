@@ -2,9 +2,6 @@
 # -*- coding: utf-8 -*-
 
 """
-This function asks user to enter a word and converts the letters
-to capital. The function will return numbers and capital letters the same
-
 Created on 31 12 2024
 
 @author: Kareiman Altayeb
