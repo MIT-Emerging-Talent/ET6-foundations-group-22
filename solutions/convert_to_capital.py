@@ -2,6 +2,8 @@
 # -*- coding: utf-8 -*-
 
 """
+A module that converts letters to upper case
+
 Created on 31 12 2024
 
 @author: Kareiman Altayeb

@@ -2,6 +2,8 @@
 # -*- coding: utf-8 -*-
 
 """
+A module to test convert_to_capital function
+
 Created on 03 01 2025
 
 @author: Kareiman Altayeb
