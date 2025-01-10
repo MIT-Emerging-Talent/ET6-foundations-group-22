@@ -1,3 +1,8 @@
+"""
+This module contains unit tests for the get_unique_values function
+in the solutions module.
+"""
+
 import csv
 import os
 import unittest

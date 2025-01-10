@@ -1,3 +1,9 @@
+# Module for extracting unique values from a CSV file.
+"""
+This module provides the get_unique_values function to extract
+unique values from a specified column in a CSV file.
+"""
+
 import csv
 
 
