@@ -48,7 +48,3 @@ class TestConvertCapitalLetters(unittest.TestCase):
         """It should raise an error for space or empty entry"""
         with self.assertRaises(AssertionError):
             convert_to_capital("")
-
-
-if __name__ == "__main__":
-    unittest.main()
