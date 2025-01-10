@@ -11,7 +11,7 @@ from solutions.get_unique_values import get_unique_values
 
 
 class TestGetUniqueValues(unittest.TestCase):
-    """Tests for the get_unique_values function."""
+    """Test for the get_unique_values function."""
 
     def setUp(self):
         """Create a sample CSV file for testing."""
