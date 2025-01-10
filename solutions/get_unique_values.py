@@ -1,7 +1,7 @@
 import csv
 
 
-def get_unique_values(file_path, column_name):
+def get_unique_values(file_path: str, column_name: str) -> list:
     """
     Get unique values from a specified column in a CSV file.
 
@@ -19,10 +19,12 @@ def get_unique_values(file_path, column_name):
     try:
         with open(file_path, "r") as file:
             reader = csv.DictReader(file)
+            # Check if the column name exists in the CSV header
             if column_name not in reader.fieldnames:
                 raise KeyError(f"Column '{column_name}' does not exist in the CSV.")
 
             unique_values = set()
+            # Iterate through the rows and add unique values to the set
             for row in reader:
                 unique_values.add(row[column_name])
 

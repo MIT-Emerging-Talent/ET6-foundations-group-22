@@ -1,4 +1,4 @@
-import csv  # Import the csv module
+import csv
 import os
 import unittest
 
@@ -6,11 +6,13 @@ from solutions.get_unique_values import get_unique_values
 
 
 class TestGetUniqueValues(unittest.TestCase):
+    """Tests for the get_unique_values function."""
+
     def setUp(self):
         """Create a sample CSV file for testing."""
         with open("test_data.csv", "w", newline="") as file:
             writer = csv.writer(file)
-            writer.writerow(["col1", "col2"])  # Write header
+            writer.writerow(["col1", "col2"])
             writer.writerows([[1, "a"], [2, "b"], [2, "a"], [3, "c"]])
 
     def tearDown(self):
@@ -24,11 +26,14 @@ class TestGetUniqueValues(unittest.TestCase):
         self.assertEqual(get_unique_values("empty_file.csv", "col1"), [])
         os.remove("empty_file.csv")
 
-    def test_unique_values(self):
-        """Test with valid data and column."""
+    def test_unique_values_col1(self):
+        """Test unique values extraction from col1."""
         self.assertEqual(
             set(get_unique_values("test_data.csv", "col1")), {str(1), str(2), str(3)}
         )
+
+    def test_unique_values_col2(self):
+        """Test unique values extraction from col2."""
         self.assertEqual(
             set(get_unique_values("test_data.csv", "col2")), {"a", "b", "c"}
         )
