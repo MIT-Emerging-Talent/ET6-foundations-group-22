@@ -28,14 +28,14 @@ jobs:
           args: "format --check"
 
   py_linting:
-  runs-on: ubuntu-latest
-  steps:
-    # ... other steps
-    - name: Python - Check Linting - ruff
-      uses: astral-sh/ruff-action@v1
-      with:
-        args: solutions/get_unique_values.py solutions/tests/test_get_unique_values.py
-
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      # passing ruff linting is required
+      - name: Python - Check Linting - ruff
+        uses: astral-sh/ruff-action@v1
+        with:
+          args: solutions/get_unique_values.py solutions/tests/test_get_unique_values.py
       # passing pylint is not required - discuss errors in code review
       # adapted from https://github.com/davidslusser/actions_python_pylint/tree/main
       - name: python version
@@ -55,11 +55,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-
       - name: python version
         run: python --version
         shell: bash
-
       - name: Check for test files
         id: check_tests
         run: |
@@ -74,7 +72,6 @@ jobs:
             echo "has_tests=false" >> $GITHUB_OUTPUT
           fi
         shell: bash
-
       - name: Python - Run Tests
         if: steps.check_tests.outputs.has_tests == 'true'
         run: |
