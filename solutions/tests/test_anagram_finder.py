@@ -1,13 +1,3 @@
-"""
-Unit tests for the `is_anagram` function.
-
-These tests ensure correct behavior of the `is_anagram` function,
-including standard anagram checking, edge cases, input validation, and defensive assertions.
-
-Created on 03 01 2025
-@author: Frankline Ambetsa
-"""
-
 import unittest
 from solutions.anagram_finder import is_anagram
 
