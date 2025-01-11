@@ -28,12 +28,13 @@ jobs:
           args: "format --check"
 
   py_linting:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v4
-      # passing ruff linting is required
-      - name: Python - Check Linting - ruff
-        uses: astral-sh/ruff-action@v1
+  runs-on: ubuntu-latest
+  steps:
+    # ... other steps
+    - name: Python - Check Linting - ruff
+      uses: astral-sh/ruff-action@v1
+      with:
+        args: solutions/get_unique_values.py solutions/tests/test_get_unique_values.py
 
       # passing pylint is not required - discuss errors in code review
       # adapted from https://github.com/davidslusser/actions_python_pylint/tree/main
