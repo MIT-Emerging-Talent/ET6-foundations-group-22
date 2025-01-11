@@ -20,7 +20,6 @@ def get_unique_values(file_path: str, column_name: str) -> list:
                          paths are acceptable. The file must exist, or a FileNotFoundError will be raised.
         column_name (str): Name of the column to extract unique values. It should correspond to a
                            header in the CSV file.
-
     Returns:
         list: Unique values in the specified column. The order of the unique values is not guaranteed to be
               the same as their order of appearance in the CSV file.
