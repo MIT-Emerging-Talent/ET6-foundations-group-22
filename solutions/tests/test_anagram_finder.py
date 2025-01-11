@@ -1,4 +1,6 @@
+# Import statements must be at the top of the file
 import unittest
+
 from solutions.anagram_finder import is_anagram
 
 
