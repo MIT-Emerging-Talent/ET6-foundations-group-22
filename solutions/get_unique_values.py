@@ -21,6 +21,28 @@ def get_unique_values(file_path: str, column_name: str) -> list:
     Raises:
         FileNotFoundError: If the file path is invalid.
         KeyError: If the column name doesn't exist in the CSV.
+
+    Examples:
+        >>> with open("test.csv", "w", newline="") as f:
+        ...     writer = csv.writer(f)
+        ...     writer.writerow(["Name", "Age", "City"])
+        ...     writer.writerow(["Alice", "25", "New York"])
+        ...     writer.writerow(["Bob", "30", "London"])
+        ...     writer.writerow(["Alice", "25", "Paris"])
+        >>> get_unique_values("test.csv", "Name")
+        ['Bob', 'Alice']
+        >>> get_unique_values("test.csv", "City")
+        ['Paris', 'New York', 'London']
+        >>> get_unique_values("test.csv", "Age")
+        ['30', '25']
+        >>> get_unique_values("test.csv", "Country")
+        Traceback (most recent call last):
+        ...
+        KeyError: "Column 'Country' does not exist in the CSV."
+        >>> get_unique_values("nonexistent_file.csv", "Name")
+        Traceback (most recent call last):
+        ...
+        FileNotFoundError: File not found: nonexistent_file.csv
     """
     try:
         with open(file_path, "r") as file:
