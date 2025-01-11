@@ -17,7 +17,7 @@ def convert_to_capital(user_text: str) -> str:
         user_text (str): The user input text to be converted to uppercase.
 
     Returns:
-        (str) : user_text in capital letters
+        str : user_text in capital letters
 
     Raises:
         AssertionError: If the input is empty or contains only spaces.
