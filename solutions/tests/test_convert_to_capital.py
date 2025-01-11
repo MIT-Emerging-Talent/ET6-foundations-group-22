@@ -4,6 +4,11 @@
 """
 A module to test convert_to_capital function
 
+Test categories:
+    - Standard cases: Regular text with different length
+    - Edge cases: Mix of different data types
+    - Defensive tests: Empty input
+
 Created on 03 01 2025
 
 @author: Kareiman Altayeb

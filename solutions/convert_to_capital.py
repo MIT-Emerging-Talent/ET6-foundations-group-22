@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 
 """
-A module that converts letters to upper case
+A module that converts letters to uppercase
 
 Created on 31 12 2024
 
@@ -13,15 +13,15 @@ Created on 31 12 2024
 def convert_to_capital(user_text: str) -> str:
     """Asks the user to enter a text and returns the text in capital
 
-    parameters:
-        user_text = in str
-    returns:
-        user_text in capital letters
+    Parameters:
+        user_text (str): The user input text to be converted to uppercase.
+    Returns:
+        (str) : user_text in capital letters
 
-    raises:
-        AssertionError: if input is empty
+    Raises:
+        AssertionError: If the input is empty or contains only spaces.
 
-    examples:
+    Examples:
     >>> convert_to_capital('hello')
         'HELLO'
     >>> convert_to_capital('HelLo')
