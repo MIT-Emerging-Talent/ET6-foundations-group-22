@@ -15,6 +15,7 @@ def convert_to_capital(user_text: str) -> str:
 
     Parameters:
         user_text (str): The user input text to be converted to uppercase.
+
     Returns:
         (str) : user_text in capital letters
 
