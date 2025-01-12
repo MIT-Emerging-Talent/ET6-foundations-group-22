@@ -6,10 +6,6 @@ This module provides functionality to extract unique values from a CSV file.
 Author: Derek Karungani
 Date Created: 2024-12-11
 
-It contains the `get_unique_values` function, which takes a file path and
-column name as input and returns a list of unique values from that column.
-The module handles potential errors like invalid file paths or missing column
-names.
 """
 
 import csv
