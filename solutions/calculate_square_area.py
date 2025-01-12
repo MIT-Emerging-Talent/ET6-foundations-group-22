@@ -15,14 +15,14 @@ def calculate_square_area(side_length: float) -> float:
     """The function asks the user to enter the side length of the square
     and the function returns the area of the square.
 
-    parameter:
+    Parameter:
     side_length in integer or float
 
-    raises:
+    Raises:
     AssertionError: if side_length was =< 0
     ValueError: if the value entered was or str or text
 
-    returns:
+    Returns:
     side_length ** 2
 
     >>> calculate_square_area(5)
