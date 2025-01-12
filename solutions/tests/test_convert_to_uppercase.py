@@ -16,7 +16,7 @@ Created on 03 01 2025
 
 import unittest
 
-# To test convert_to_capital
+# To test convert_to_uppercase
 from solutions.convert_to_uppercase import convert_to_uppercase
 
 
@@ -26,15 +26,15 @@ class TestConvertToCapitalLetters(unittest.TestCase):
     # Standard test cases
 
     def test_all_small_letters(self):
-        """It should convert all letters to capital"""
+        """It should convert all letters to capital letter"""
         self.assertEqual(convert_to_uppercase("kareiman"), "KAREIMAN")
 
     def test_some_are_capital_letters(self):
-        """It should convert all letters to capital"""
+        """It should convert all letters to capital letters"""
         self.assertEqual(convert_to_uppercase("kAREiMan"), "KAREIMAN")
 
     def test_full_sentence(self):
-        """It should convert all words to capital"""
+        """It should convert all words to capital letters"""
         self.assertEqual(convert_to_uppercase("happy new year"), "HAPPY NEW YEAR")
 
     # Edge cases
