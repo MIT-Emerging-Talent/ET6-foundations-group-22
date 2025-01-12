@@ -4,7 +4,7 @@ Anagram Finder Module
 This module provides a function to determine if two strings are anagrams of each other.
 It checks if the strings are anagrams, handling edge cases like empty strings, special characters, and case-insensitivity.
 
-Created on 03 01 2025
+Created on 12 01 2025
 @author: Frankline Ambetsa
 """
 
@@ -51,7 +51,7 @@ def anagram_finder(string1: str, string2: str) -> bool:
     if string2 == "":
         raise AssertionError("string2 cannot be empty")
 
-    # Remove spaces and convert to lowercase
+    # To Remove spaces and convert to lowercase
     string1 = string1.replace(" ", "").lower()
     string2 = string2.replace(" ", "").lower()
 
