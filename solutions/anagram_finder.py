@@ -59,6 +59,5 @@ def anagram_finder(string1: str, string2: str) -> bool:
     return sorted(string1) == sorted(string2)
 
 
-# No doctest or function call here.
 if __name__ == "__main__":
     pass
