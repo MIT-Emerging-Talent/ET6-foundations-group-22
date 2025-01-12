@@ -1,6 +1,11 @@
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
 """
 This module contains unit tests for the get_unique_values function
 in the solutions module.
+
+Author: Derek Karungani
+Date Created: 2024-12-11
 """
 
 import csv

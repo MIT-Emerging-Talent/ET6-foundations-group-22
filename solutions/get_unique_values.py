@@ -1,5 +1,10 @@
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
 """
 This module provides functionality to extract unique values from a CSV file.
+
+Author: Derek Karungani
+Date Created: 2024-12-11
 
 It contains the `get_unique_values` function, which takes a file path and
 column name as input and returns a list of unique values from that column.
@@ -48,15 +53,16 @@ def get_unique_values(file_path: str, column_name: str) -> list:
         KeyError: "Column 'Country' does not exist in the CSV."
         >>> get_unique_values("nonexistent_file.csv", "Name")
         Traceback (most recent call last):
-        ...
-        FileNotFoundError: File not found: nonexistent_file.csv
+        ...        FileNotFoundError: File not found: nonexistent_file.csv
         >>> get_unique_values("", "Name")
         Traceback (most recent call last):
         ...
         ValueError: The file_path cannot be an empty string.
     """
+    # Check for empty file_path
     if not file_path:
         raise ValueError("The file_path cannot be an empty string.")
+    # Try to open the file and read data
     try:
         with open(file_path, "r", encoding="utf-8") as file:
             reader = csv.DictReader(file)
@@ -70,5 +76,6 @@ def get_unique_values(file_path: str, column_name: str) -> list:
                 unique_values.add(row[column_name])
 
         return list(unique_values)
+    # Handle file not found error
     except FileNotFoundError as e:
         raise FileNotFoundError(f"File not found: {file_path}") from e
