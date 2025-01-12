@@ -2,6 +2,8 @@
 Created on 08/01/2024
 
 @author: Tibyan Khalid
+
+This file contains the function Swap_letters that swaps the case of each letter in a string.
 """
 
 
@@ -29,9 +31,9 @@ def Swap_letters(string: str) -> str:
     changed_string = ""
     for char in string:
         if char.islower():
-            changed_string = changed_string + char.upper()
+            changed_string += char.upper()
         elif char.isupper():
-            changed_string = changed_string + char.lower()
+            changed_string += char.lower()
         else:
-            changed_string = changed_string + char
+            changed_string += char
     return changed_string

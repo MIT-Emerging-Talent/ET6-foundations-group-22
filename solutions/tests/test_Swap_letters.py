@@ -2,6 +2,8 @@
 Created on 08/01/2024
 
 @author: Tibyan Khalid
+
+This file contains boundary cases and defensive assertion tests for the function Swap_letters.
 """
 
 import unittest
@@ -9,8 +11,9 @@ import unittest
 from ..Swap_letters import Swap_letters
 
 
-class TestSwapletters(unittest.TestCase):
-    """Unittests for the Swap_letters function"""
+class TestSwapLettersFunctionality(unittest.TestCase):
+    """Test cases for validating the behavior of the Swap_letters function,
+    including edge cases and defensive assertions."""
 
     def test_lowercase_all(self):
         "Testing from lowercase to uppercase"
@@ -32,6 +35,14 @@ class TestSwapletters(unittest.TestCase):
     def test_spaces(self):
         "Handle spaces correctly"
         self.assertEqual(Swap_letters("Hello World"), "hELLO wORLD")
+
+    def test_empty_string(self):
+        "Test for an empty string input"
+        self.assertEqual(Swap_letters(""), "")
+
+    def test_special_characters(self):
+        "Test for special characters input"
+        self.assertEqual(Swap_letters("1234!@#$"), "1234!@#$")
 
 
 if __name__ == "__main__":
