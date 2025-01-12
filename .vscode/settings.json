@@ -123,5 +123,5 @@
       "source.organizeImports.ruff": "explicit"
     }
   },
-  "cSpell.words": ["dcbae", "doctests"]
+"cSpell.words": ["dcbae", "doctests", "unittests"]
 }
