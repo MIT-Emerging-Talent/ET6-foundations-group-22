@@ -4,8 +4,8 @@ on: [push, pull_request, workflow_dispatch]
 
 jobs:
   ls_linting:
-    runs-on: ubuntu-latest
-    steps:
+      runs-on: ubuntu-latest
+      steps:  
         - uses: actions/checkout@v4
         - uses: ls-lint/action@v2.2.3
 
@@ -31,6 +31,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+
       # passing ruff linting is required
       - name: Python - Check Linting - ruff
         uses: astral-sh/ruff-action@v1
@@ -43,41 +44,37 @@ jobs:
         if: always()
       - name: install pylint
         run: |
-          python -m pip install --upgrade pip
+          python -  m pip install --upgrade pip
           pip install pylint
         shell: bash
       - name: Python - Check Linting - pylint
-        run: "pylint solutions tests || echo '::warning title=Pylint Error(s)::Discuss solutions and trade-offs in code review.'"
+        run: "pylint solutions tests  || echo '::warning title=Pylint Error(s)::Discuss solutions and trade-offs in code review.'"
         shell: bash
 
   py_tests:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-
+      
       - name: python version
         run: python --version
         shell: bash
-
+      
       - name: Check for test files
         id: check_tests
         run: |
-          echo "Running tests for get_unique_values"
-          test_files=$(find ./solutions/tests -type f -name "test_get_unique_values.py")
+          test_files=$(find ./solutions/tests -type f -name "test_*.py")
           if [ -n "$test_files" ]; then
             echo "Found test files:"
             echo "$test_files"
             echo "has_tests=true" >> $GITHUB_OUTPUT
           else
-            echo "No test files found matching pattern ./solutions/tests/test_get_unique_values.py"
+            echo "No test files found matching pattern ./solutions/tests/test_*.py"
             echo "has_tests=false" >> $GITHUB_OUTPUT
           fi
         shell: bash
-
+      
       - name: Python - Run Tests
         if: steps.check_tests.outputs.has_tests == 'true'
-        run: |
-          python -m pip install --upgrade pip
-          pip install pytest
-          pytest -v solutions/tests/test_get_unique_values.py
+        run: python -m unittest
         shell: bash
