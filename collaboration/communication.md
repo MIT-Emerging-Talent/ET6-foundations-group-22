@@ -1,54 +1,98 @@
-<!--
-    this template is for inspiration, feel free to change it however you like!
-
-    Careful! be sure to protect your privacy when filling out this document
-        everything you write here will be public
-        so share only what you are comfortable sharing online
-        you can share the rest in confidence with you group by another channel
--->
-
 # Communication
 
-______________________________________________________________________
+---
 
 ## Communication Schedule
 
-| Day | How | The topic of discussion | | --- | :-: | ----------------------- |
-| | | |
+| **Day**       | **How**           | **Topic of Discussion**         |  
+|---------------|-------------------|---------------------------------|  
+| Friday/Sunday | Video call (Zoom) | Updates, discussions, decisions |  
+| Everyday      | Slack             | Quick questions, announcements  |  
+
+---
 
 ## Communication Channels
 
-how often will we get in touch on each channel, and what we will discuss there:
+**How often will we use each channel and what for:**  
 
-- **Issues**:
-- **Pull Requests**:
-- **Slack/Discord**:
-- **Video Calls**:
+- **Issues**:  
+  - **Frequency**: Daily or as needed.  
+  - **Topics**: Bugs, features, docs, and project discussions.  
 
-______________________________________________________________________
+- **Pull Requests**:  
+  - **Frequency**: When ready for review.  
+  - **Topics**: Code feedback, changes, and approval.  
+
+- **Slack/Discord**:  
+  - **Frequency**: Continuously.  
+  - **Topics**: Questions, updates, links, and team bonding.  
+
+- **Video Calls**:  
+  - **Frequency**: Weekly or bi-weekly.  
+  - **Topics**: Planning, retrospectives, and complex issues.  
+
+---
 
 ## Availability
 
-### Availability for calling/messaging
+### Availability for Calling/Messaging
 
-| Day | Monday | Tuesday | Wednesday | Thursday | Friday | Saturday | Sunday | |
------- | :----: | :-----: | :-------: | :------: | :----: | :------: | :----: |
-| _name_ | | | | | | | |
+| **Day**   | **Mon** | **Tue** | **Wed** | **Thu** | **Fri**  |  
+|-----------|:-------:|:-------:|:-------:|:-------:|:-------:|  
+| Derek     | ✔       | ✔       | ✔       | ✔       | ✔       |  
+| Safaa     | ✔       | ✔       | ✔       | ✘       | ✘       |  
+| Frankline | ✔       | ✔       | ✔       | ✔       | ✔       |  
+| Tibyan    | ✘       | ✔       | ✘       | ✘       | ✔       |  
+| Azza      | ✔       | ✔       | ✔       | ✘       | ✘       |  
+| Kareiman  | ✔       | ✔       | ✔       | ✔       | ✔       |  
+| Eman      | ✔       | ✔       | ✔       | ✔       | ✔       |  
+| Shima     | ✔       | ✘       | ✔       | ✔       | ✔       |  
 
-### How many hours everyone has per day
+| **Day**   | **Sat** | **Sun** |  
+|-----------|:-------:|:-------:|  
+| Derek     | ✔       | ✔       |  
+| Safaa     | ✘       | ✘       |  
+| Frankline | ✘       | ✘       |  
+| Tibyan    | ✔       | ✔       |  
+| Azza      | ✔       | ✔       |  
+| Kareiman  | ✔       | ✔       |  
+| Eman      | ✔       | ✔       |  
+| Shima     | ✔       | ✘       |  
 
-- name: _5h_;
-- name: _6h_;
-- name: _5h_;
-- name: _4h_;
-- name: _3h_;
+---
+
+### Hours Available Per Day
+
+| **Name**   | **Mon** | **Tue** | **Wed** | **Thu** | **Fri**  |  
+|------------|---------|---------|---------|---------|---------|  
+| Ambetsa    | 2       | 2       | 2       | 2       | 2       |  
+| Derek      | 2       | 2       | 2       | 2       | 2       |  
+| Safaa      | 2       | 2       | 2       | ✘       | ✘       |  
+| Shima      | 2       | ✘       | 3       | 3       | 3       |  
+| Tibyan     | 1       | 6       | 1       | 1       | 6       |  
+| Azza       | 2       | 7       | 7       | ✘       | ✘       |  
+| Kareiman   | 6       | 6       | 6       | 6       | 3       |  
+| Eman       | 2       | 2       | 2       | 2       | 2       |  
+
+| **Name**   | **Sat** | **Sun** |  
+|------------|---------|---------|  
+| Ambetsa    | ✘       | ✘       |  
+| Derek      | 2       | 2       |  
+| Safaa      | 2       | 2       |  
+| Shima      | 3       | ✘       |  
+| Tibyan     | 6       | 6       |  
+| Azza       | 2       | 7       |  
+| Kareiman   | 4       | 4       |  
+| Eman       | 3       | 3       |  
+
+---
 
 ## Asking for Help
 
-There's a fine line between confidently learning from your mistakes, and
-stubbornly getting no where. Here is a general guide for when to ask for help
-based on how long you've been stuck on the same problem:
+Guidelines for asking help:  
 
-1. _0 -> 30 min_: Try on your own
-1. _30 -> 60 min_: Ask your group for help
-1. _60+ min_: Tag your coaches in Slack or GitHub
+1. **0-30 min**: Try solving independently.  
+2. **30-60 min**: Ask group members for help.  
+3. **60+ min**: Tag coaches on Slack/GitHub.  
+
+---
