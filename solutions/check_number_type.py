@@ -1,3 +1,5 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
 """
 This function asks the user to enter a number and checks if the number
 is even or odd. It then returns the result as a string.
