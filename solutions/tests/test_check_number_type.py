@@ -9,7 +9,6 @@ Test categories:
     - Edge cases: empty lists, single element
     - Defensive tests: wrong input types, assertions
 
-
 Created on 05 01 2025
 @author: Eman Alfalouji
 """

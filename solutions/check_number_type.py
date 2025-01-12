@@ -14,7 +14,6 @@ def check_number_type(user_input: str) -> str:
     """
     The function asks the user to enter a number and determines if it is type (even or odd.)
 
-
     Parameters:
         user_input (str): str
         A string that represents an integer.
@@ -41,10 +40,6 @@ def check_number_type(user_input: str) -> str:
         Traceback (most recent call last):
         ...
         ValueError:"Please enter a valid number"
-
-
-
-
     """
     user_input = user_input.strip()
     # Check if it is empty
