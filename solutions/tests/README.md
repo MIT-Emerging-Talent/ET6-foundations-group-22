@@ -27,4 +27,3 @@ Run the following command to execute all tests:
 
 ```bash
 python -m unittest discover -s solutions/tests -p "test_*.py"
-
