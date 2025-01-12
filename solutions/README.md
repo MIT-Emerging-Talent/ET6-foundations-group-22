@@ -6,23 +6,32 @@ This folder contains implementations for the challenges.
 
 1. **Merge Dictionaries**:
    - A utility to merge two dictionaries with conflict resolution.
-   - Resolves conflicts with a custom function, or by default, `dict2` overwrites `dict1`.
    - See `merge_dictionaries.py` for the implementation.
 
-   ### How to Run
+2. **Anagram Finder**:
+   - A function to check if two strings are anagrams.
+   - See `anagram_finder.py` for the implementation.
 
-   1. Clone the repository.
-   2. Install dependencies (if any).
-   3. Run the tests:
+## Usage
 
-       ```bash
-       python -m unittest solutions/tests/test_merge_dictionaries.py
-       ```
+To use any solution, simply import the
+required function and pass the appropriate arguments.
 
-   ### Example
+### How to Run
 
-   ```python
-   dict1 = {"a": 1, "b": 2}
-   dict2 = {"b": 3, "c": 4}
-   merged = merge_dictionaries(dict1, dict2)
-   print(merged)  # Output: {'a': 1, 'b': 3, 'c': 4}
+1. Clone the repository.
+2. Navigate to the folder containing the solution.
+3. Run the desired script:
+
+    ```bash
+    python <script_name>.py
+    ```
+
+### Example
+
+```python
+# Example for Anagram Finder
+from anagram_finder import are_anagrams
+
+result = are_anagrams("listen", "silent")
+print(result)  # Output: True
