@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 
 """
-A module that converts letters to uppercase
+A module that converts all letters to uppercase
 
 Created on 31 12 2024
 
