@@ -8,10 +8,8 @@ Created on 03 01 2025
 @author: Frankline Ambetsa
 """
 
-import doctest
 
-
-def is_anagram(string1: str, string2: str) -> bool:
+def anagram_finder(string1: str, string2: str) -> bool:
     """
     Check if two strings are anagrams of each other.
 
@@ -28,15 +26,15 @@ def is_anagram(string1: str, string2: str) -> bool:
     Raises:
         ValueError: If any string is empty except when both are empty.
 
-    >>> is_anagram("listen", "silent")
+    >>> anagram_finder("listen", "silent")
     True
-    >>> is_anagram("evil", "vile")
+    >>> anagram_finder("evil", "vile")
     True
-    >>> is_anagram("hello", "world")
+    >>> anagram_finder("hello", "world")
     False
-    >>> is_anagram("a gentleman", "elegant man")
+    >>> anagram_finder("a gentleman", "elegant man")
     True
-    >>> is_anagram("clint eastwood", "old west action")
+    >>> anagram_finder("clint eastwood", "old west action")
     True
     """
 
@@ -61,6 +59,6 @@ def is_anagram(string1: str, string2: str) -> bool:
     return sorted(string1) == sorted(string2)
 
 
-# Run doctests when executed directly
+# No doctest or function call here.
 if __name__ == "__main__":
-    doctest.testmod()
+    pass
