@@ -4,7 +4,8 @@ This folder contains unit tests for the challenges in the `solutions` module.
 
 ## Purpose
 
-The purpose of these tests is to ensure the functionality of the implemented solutions, including handling edge cases and verifying correct behavior.
+The purpose of these tests is to ensure the functionality of
+the implemented solutions, including handling edge cases and verifying correct behavior.
 
 ## Test Files
 
@@ -17,7 +18,8 @@ The purpose of these tests is to ensure the functionality of the implemented sol
 
 - **`test_anagram_finder.py`**:
   - Tests for the Anagram Finder challenge.
-  - Ensures the function correctly identifies whether two strings are anagrams, handling both typical and edge cases.
+  - Ensures the function correctly identifies whether two strings are anagrams,
+  - handling both typical and edge cases.
 
 ## Running Tests
 
@@ -25,3 +27,4 @@ Run the following command to execute all tests:
 
 ```bash
 python -m unittest discover -s solutions/tests -p "test_*.py"
+
