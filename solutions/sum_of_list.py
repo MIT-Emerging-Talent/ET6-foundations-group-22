@@ -1,3 +1,5 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
 """
 This function asks the user to enter numbers and return the sum of the numbers  .
 
@@ -29,11 +31,17 @@ def sum_of_list(numbers: List[Union[int, float]]) -> Union[int, float]:
         >>> sum_of_list([-1,-2,-5])
         The sum of the list is:-8
         >>> sum_of_list([-1,-2,"l"])
-        Please enter valid numbers separated by spaces.
+        Traceback (most recent call last):
+        ...
+        ValueError:Please enter valid numbers separated by spaces.
         >>> sum_of_list(["l"])
-        Please enter valid numbers separated by spaces.
+        Traceback (most recent call last):
+        ...
+        ValueError:Please enter valid numbers separated by spaces.
         >>> sum_of_list([])
-        Please enter valid numbers separated by spaces.
+        Traceback (most recent call last):
+        ...
+        ValueError:Please enter valid numbers separated by spaces.
     """
     if not isinstance(numbers, list):
         raise TypeError("Input must be a list of numbers.")
