@@ -1,34 +1,29 @@
 # Tests
 
-## Tests for Dictionary Merging with Conflict Resolution
-
-This folder contains unit tests for the dictionary merging and conflict resolution
- functionalities implemented in the `merge_dictionaries.py` script.
+This folder contains unit tests for the challenges in the `solutions` module.
 
 ## Purpose
 
-The purpose of the tests is to ensure that the dictionary merging logic,
-including handling conflicts, works as expected. The tests verify that:
+The purpose of these tests is to ensure the functionality of
+the implemented solutions, including handling edge cases and verifying correct behavior.
 
-- Dictionaries are merged correctly.
-- Conflict resolution logic (e.g., using the `max` function)
-  is applied properly when keys conflict.
-- Edge cases and various scenarios are handled appropriately.
+## Test Files
 
-## Test File Structure
+- **`test_merge_dictionaries.py`**:
+  - Tests for the Merge Dictionaries challenge.
+  - Verifies:
+    - Default dictionary merging (where dictionary B overwrites dictionary A).
+    - Conflict resolution merging (e.g., using the `max` value).
+    - Handling of edge cases, such as empty dictionaries and overlapping keys.
 
-- `test_merge_dictionaries.py`: Contains unit tests for the `merge_dictionaries`
-  function. It includes tests for:
-  - Default dictionary merging (where dictionary B overwrites dictionary A).
-  - Conflict resolution merging (using the `max` value).
-  - Various edge cases, such as empty dictionaries, overlapping keys, and more.
+- **`test_anagram_finder.py`**:
+  - Tests for the Anagram Finder challenge.
+  - Ensures the function correctly identifies whether two strings are anagrams,
+  - handling both typical and edge cases.
 
-## Running the Tests
+## Running Tests
 
-To run the tests, follow these steps:
+Run the following command to execute all tests:
 
-1. **Navigate to the project root directory** (where the `solutions` folder is located):
-
-   ```bash
-   cd /path/to/your/project
-   python -m unittest discover -s solutions/tests
+```bash
+python -m unittest discover -s solutions/tests -p "test_*.py"

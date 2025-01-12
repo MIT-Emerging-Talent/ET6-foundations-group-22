@@ -1,30 +1,37 @@
 # Solutions
 
-## Merge Dictionaries Solution
+This folder contains implementations for the challenges.
 
-This repository contains a Python solution to merge two dictionaries.
-The solution merges two dictionaries by resolving conflicts based on an optional
- conflict resolution function.
+## Challenges
 
-### Features
+1. **Merge Dictionaries**:
+   - A utility to merge two dictionaries with conflict resolution.
+   - See `merge_dictionaries.py` for the implementation.
 
-- Merges two dictionaries.
-- Resolves conflicts with a custom function, or by default, `dict2` overwrites `dict1`.
+2. **Anagram Finder**:
+   - A function to check if two strings are anagrams.
+   - See `anagram_finder.py` for the implementation.
+
+## Usage
+
+To use any solution, simply import the
+required function and pass the appropriate arguments.
 
 ### How to Run
 
 1. Clone the repository.
-2. Install dependencies (if any).
-3. Run the tests:
+2. Navigate to the folder containing the solution.
+3. Run the desired script:
 
     ```bash
-    python -m unittest solutions/tests/test_merge_dictionaries.py
+    python <script_name>.py
     ```
 
 ### Example
 
 ```python
-dict1 = {"a": 1, "b": 2}
-dict2 = {"b": 3, "c": 4}
-merged = merge_dictionaries(dict1, dict2)
-print(merged)  # Output: {'a': 1, 'b': 3, 'c': 4}
+# Example for Anagram Finder
+from anagram_finder import are_anagrams
+
+result = are_anagrams("listen", "silent")
+print(result)  # Output: True
