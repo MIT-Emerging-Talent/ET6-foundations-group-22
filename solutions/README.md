@@ -1,6 +1,6 @@
 # Solutions
 
-This folder contains implementations for various challenges.
+This folder contains implementations for the challenges.
 
 ## Challenges
 
