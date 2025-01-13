@@ -2,6 +2,19 @@
 
 # Retrospective
 
+# Introduction
+
+As our project comes to an end, we’re taking a moment to reflect on everything
+we’ve learned along the way 🎉
+From the things we could’ve done better to the strategies that worked like a charm,
+this journey has been full of lots of lessons 🤓.
+
+In this summary, we’ll dive into what we need to *stop*,
+*continue*, and *start* doing, share some cool takeaways,
+and compare how our initial plans stacked up against reality 📊
+Here’s what we’ve learned and how we’re planning to level up
+for the next project 🚀!
+
 ## Stop Doing
 
 ### Mistakes Made  
