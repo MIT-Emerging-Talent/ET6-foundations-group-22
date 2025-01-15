@@ -4,7 +4,7 @@ Anagram Finder Module
 This module provides a function to determine if two strings are anagrams of each other.
 It checks if the strings are anagrams, handling edge cases like empty strings, special characters, and case-insensitivity.
 
-Created on 12 01 2025
+Created on 13 01 2025
 @author: Frankline Ambetsa
 """
 
