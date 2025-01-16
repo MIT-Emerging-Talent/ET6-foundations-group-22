@@ -20,7 +20,6 @@ def calculate_square_area(side_length: float) -> float:
 
     Raises:
     AssertionError: if side_length was =< 0
-    ValueError: if the value entered was or str or text
 
     Returns:
     side_length ** 2
@@ -41,4 +40,4 @@ def calculate_square_area(side_length: float) -> float:
     if side_length <= 0:
         raise AssertionError("side length must be bigger than zero")
 
-    return side_length**2
+    return side_length ** 2

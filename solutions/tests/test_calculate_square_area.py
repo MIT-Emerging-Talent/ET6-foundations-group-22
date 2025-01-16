@@ -1,7 +1,7 @@
 # !/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-Test module for square_area function.
+Test module for calculate_square_area function.
 
 Test categories:
 - Standard cases: positive numbers
