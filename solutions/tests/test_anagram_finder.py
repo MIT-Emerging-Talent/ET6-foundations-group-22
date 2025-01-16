@@ -4,7 +4,7 @@ Unit tests for the `anagram_finder` function.
 These tests validate the correct behavior of the function,
 covering edge cases, defensive assertions, and typical usage scenarios.
 
-Created on 13 01 2025
+Created on 14 01 2025
 @author: Frankline Ambetsa
 """
 
