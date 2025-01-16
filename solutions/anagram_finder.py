@@ -11,53 +11,47 @@ Created on 13 01 2025
 
 def anagram_finder(string1: str, string2: str) -> bool:
     """
-    Check if two strings are anagrams of each other.
-
-    Anagrams are words or phrases made by rearranging the letters of another word or phrase.
-    This function will check for anagram status while ignoring spaces and case sensitivity.
+    Determine if two strings are anagrams of each other.
 
     Args:
-        string1 (str): The first string.
-        string2 (str): The second string.
+        string1 (str): The first string to compare.
+        string2 (str): The second string to compare.
 
     Returns:
         bool: True if the strings are anagrams, False otherwise.
 
     Raises:
-        ValueError: If any string is empty except when both are empty.
+        AssertionError: If the inputs are not valid strings or both are empty.
 
-    >>> anagram_finder("listen", "silent")
-    True
-    >>> anagram_finder("evil", "vile")
-    True
-    >>> anagram_finder("hello", "world")
-    False
-    >>> anagram_finder("a gentleman", "elegant man")
-    True
-    >>> anagram_finder("clint eastwood", "old west action")
-    True
+    Examples:
+        >>> anagram_finder("listen", "silent")
+        True
+        >>> anagram_finder("a gentleman", "elegant man")
+        True
+        >>> anagram_finder("", "")
+        True
+        >>> anagram_finder("hello", "world")
+        False
     """
+    # Defensive assertions
+    if not isinstance(string1, str) or not isinstance(string2, str):
+        raise AssertionError("Inputs must be valid strings")
 
-    # Defensive assertions for valid string inputs
-    assert isinstance(string1, str), "string1 must be a string"
-    assert isinstance(string2, str), "string2 must be a string"
-
-    # If any string is empty, raise an error, unless both are empty
+    # Allow the case where both strings are empty
     if string1 == "" and string2 == "":
-        return True  # Both empty strings are considered anagrams of each other
+        return True
 
-    if string1 == "":
-        raise AssertionError("string1 cannot be empty")
-    if string2 == "":
-        raise AssertionError("string2 cannot be empty")
+    # Ensure one string is not empty if the other is non-empty
+    if string1.strip() == "" or string2.strip() == "":
+        raise AssertionError("Both strings must be non-empty if not both empty")
 
-    # To Remove spaces and convert to lowercase
-    string1 = string1.replace(" ", "").lower()
-    string2 = string2.replace(" ", "").lower()
+    # Helper function: Normalize a string by removing spaces and converting to lowercase
+    def normalize(s: str) -> str:
+        return "".join(s.split()).lower()
 
-    # Check if sorted strings are equal (anagram check)
-    return sorted(string1) == sorted(string2)
+    # Normalize both input strings
+    normalized1 = normalize(string1)
+    normalized2 = normalize(string2)
 
-
-if __name__ == "__main__":
-    pass
+    # Compare the sorted versions of the normalized strings
+    return sorted(normalized1) == sorted(normalized2)

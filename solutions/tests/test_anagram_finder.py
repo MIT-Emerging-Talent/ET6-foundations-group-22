@@ -1,8 +1,8 @@
 """
 Unit tests for the `anagram_finder` function.
 
-These tests ensure correct behavior of the `anagram_finder` function,
-including standard merging, conflict resolution, edge cases, and input validation.
+These tests validate the correct behavior of the function,
+covering edge cases, defensive assertions, and typical usage scenarios.
 
 Created on 13 01 2025
 @author: Frankline Ambetsa
@@ -13,66 +13,59 @@ from solutions.anagram_finder import anagram_finder
 
 
 class TestAnagramFinder(unittest.TestCase):
-    """Test cases for the anagram_finder function."""
+    """Unit tests for the anagram_finder function."""
 
-    def test_anagrams(self):
-        """Test cases for valid anagrams."""
+    def test_valid_anagrams(self):
+        """Test valid anagrams."""
         self.assertTrue(anagram_finder("listen", "silent"))
         self.assertTrue(anagram_finder("evil", "vile"))
-        self.assertTrue(anagram_finder("dusty", "study"))
-        self.assertTrue(anagram_finder("night", "thing"))
-        self.assertTrue(anagram_finder("brag", "grab"))
+        self.assertTrue(anagram_finder("a gentleman", "elegant man"))
 
-    def test_not_anagrams(self):
-        """Test cases for invalid anagrams."""
+    def test_invalid_anagrams(self):
+        """Test invalid anagrams."""
         self.assertFalse(anagram_finder("hello", "world"))
         self.assertFalse(anagram_finder("python", "java"))
-        self.assertFalse(anagram_finder("test", "tess"))
-        self.assertFalse(anagram_finder("abcd", "dcbae"))
+        self.assertFalse(anagram_finder("abc", "abcd"))  # Strings of different lengths
 
     def test_case_insensitivity(self):
-        """Test that the function is case-insensitive."""
+        """Test case-insensitivity."""
         self.assertTrue(anagram_finder("Listen", "Silent"))
         self.assertTrue(anagram_finder("Evil", "Vile"))
-
-    def test_different_lengths(self):
-        """Test cases where the strings have different lengths."""
-        self.assertFalse(anagram_finder("abc", "ab"))
-        self.assertFalse(anagram_finder("abcd", "abcde"))
+        self.assertTrue(anagram_finder("Anagram", "Nagaram"))  # Case insensitive
 
     def test_empty_strings(self):
-        """Test edge cases with empty strings."""
-        self.assertTrue(
-            anagram_finder("", "")
-        )  # Both empty strings should be considered anagrams
+        """Test behavior with empty strings."""
+        self.assertTrue(anagram_finder("", ""))  # Both empty
         with self.assertRaises(AssertionError):
-            anagram_finder(
-                "a", ""
-            )  # A non-empty string and empty string shouldn't be anagrams
+            anagram_finder("", "non-empty")
         with self.assertRaises(AssertionError):
-            anagram_finder(
-                "", "b"
-            )  # An empty string and non-empty string shouldn't be anagrams
+            anagram_finder("non-empty", "")
 
     def test_special_characters(self):
-        """Test cases with special characters and spaces."""
-        self.assertTrue(anagram_finder("a gentleman", "elegant man"))
-        self.assertTrue(anagram_finder("clint eastwood", "old west action"))
-        self.assertFalse(anagram_finder("hello world", "world hello!"))
+        """Test handling of special characters."""
+        self.assertTrue(anagram_finder("Clint Eastwood", "Old West Action"))
+        self.assertFalse(anagram_finder("hello world", "world! hello"))
+        self.assertTrue(anagram_finder("!@#$%", "%$#@!"))  # Special characters only
 
-    def test_defensive_assertions(self):
-        """Test defensive assertions for invalid inputs."""
-        with self.assertRaises(AssertionError):
-            anagram_finder(123, "silent")  # Non-string input
-        with self.assertRaises(AssertionError):
-            anagram_finder("listen", 123)  # Non-string input
+    def test_different_lengths(self):
+        """Test behavior with strings of different lengths."""
+        self.assertFalse(anagram_finder("abc", "abcd"))
+        self.assertFalse(anagram_finder("short", "longer"))
+        self.assertFalse(
+            anagram_finder("a", "longerstring")
+        )  # One character vs a longer string
 
+    def test_invalid_inputs(self):
+        """Test behavior with invalid inputs."""
         with self.assertRaises(AssertionError):
-            anagram_finder("a", "")  # Empty string as second argument
+            anagram_finder(None, "valid")
         with self.assertRaises(AssertionError):
-            anagram_finder("", "b")  # Empty string as first argument
+            anagram_finder("valid", None)
+        with self.assertRaises(AssertionError):
+            anagram_finder(123, "valid")
+        with self.assertRaises(AssertionError):
+            anagram_finder("valid", 456)
 
 
 if __name__ == "__main__":
-    # Run the tests
     unittest.main()
