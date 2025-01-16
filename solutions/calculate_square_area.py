@@ -12,7 +12,7 @@ Created on 04 01 2025
 
 
 def calculate_square_area(side_length: float) -> float:
-    """The function asks the user to enter the side length of the square
+    """The function asks the user to enter the side length
     and then the function returns the area of the square.
 
     Parameter:
